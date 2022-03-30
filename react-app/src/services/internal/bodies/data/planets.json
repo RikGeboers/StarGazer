@@ -1,0 +1,109 @@
+{
+  "planets": [
+    {
+      "name": "Mercury",
+      "aboveHorizon": false,
+      "rightAscension": {
+        "hours": 20,
+        "minutes": 23,
+        "seconds": 23.7
+      },
+      "declination": {
+        "degrees": -19,
+        "arcminutes": 20,
+        "arcseconds": 23
+      },
+      "nakedEyeObject": true
+    },
+    {
+      "name": "Venus",
+      "aboveHorizon": true,
+      "rightAscension": {
+        "hours": 19,
+        "minutes": 15,
+        "seconds": 4.9
+      },
+      "declination": {
+        "degrees": -16,
+        "arcminutes": 53,
+        "arcseconds": 47.8
+      },
+      "nakedEyeObject": true
+    },
+    {
+      "name": "Mars",
+      "aboveHorizon": false,
+      "rightAscension": {
+        "hours": 19,
+        "minutes": 19,
+        "seconds": 34.6
+      },
+      "declination": {
+        "degrees": -22,
+        "arcminutes": 53,
+        "arcseconds": 16.2
+      },
+      "nakedEyeObject": true
+    },
+    {
+      "name": "Jupiter",
+      "aboveHorizon": false,
+      "rightAscension": {
+        "hours": 22,
+        "minutes": 51,
+        "seconds": 36.2
+      },
+      "declination": {
+        "degrees": -8,
+        "arcminutes": 18,
+        "arcseconds": 51.5
+      },
+      "nakedEyeObject": false
+    },
+    {
+      "name": "Saturn",
+      "aboveHorizon": true,
+      "rightAscension": {
+        "hours": 21,
+        "minutes": 21,
+        "seconds": 12.3
+      },
+      "declination": {
+        "degrees": -16,
+        "arcminutes": 23,
+        "arcseconds": 32.1
+      },
+      "nakedEyeObject": false
+    },
+    {
+      "name": "Uranus",
+      "aboveHorizon": true,
+      "rightAscension": {
+        "hours": 2,
+        "minutes": 34,
+        "seconds": 34.6
+      },
+      "declination": {
+        "degrees": 14,
+        "arcminutes": 44,
+        "arcseconds": 34.9
+      },
+      "nakedEyeObject": false
+    },
+    {
+      "name": "Neptune",
+      "aboveHorizon": true,
+      "rightAscension": {
+        "hours": 23,
+        "minutes": 32,
+        "seconds": 30.6
+      },
+      "declination": {
+        "degrees": -4,
+        "arcminutes": 11,
+        "arcseconds": 16.7
+      },
+      "nakedEyeObject": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "stargazer-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.com/kdg-ti/the-lab/teams/de-toffe-gasten/stargazer-backend.git",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.4",
+    "async": "^3.2.3",
+    "bootstrap": "^4.5.3",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.2",
+    "pm2": "^5.2.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.1.0",
+    "popper.js": "^1.16.1",
+    "serialport": "^10.3.0"
+  },
+  "scripts": {
+    "restart": "env-cmd -e production pm2 restart app.js && pm2 logs",
+    "stop": "pm2 delete app.js",
+    "start": "env-cmd -e production pm2 start app.js && pm2 logs",
+    "production": "env-cmd -e production node app.js",
+    "test": "env-cmd -e test node app.js"
+  }
+}

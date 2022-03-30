@@ -1,0 +1,45 @@
+const serialport = require("./serialport")
+const { telescopeManager } = require("./telescopeStrategyManager")
+
+// TODO change name of the class to the name of your telescope
+class YourTelescope {
+    constructor() {
+        this.calculateDec = function (conversionFactor, decDegrees, decMinutes, decSeconds) {
+          // TODO: implement calculation of Declination, in most cases, this method returns a couple of bytes
+        }
+
+        this.calculateRa = function (conversionFactor, raHours, raMinutes, raSeconds) {
+          // TODO: implement calculation of Right Ascension, in most cases, this method returns a couple of bytes
+        }
+
+        this.gotoPosition = function (ra, dec) {
+          // TODO: implement sequence of writes to the serialport, using the Right Ascension (ra) and Declination (dec) to move to the telescope
+          // note: it is important that you adhere to the protocol for your specific telescope, this protocol is often described in the user manual as "Goto RA/Dec"
+        }
+
+        this.moveUp = function () {
+          // TODO: implement this method to point the tube of the telescope upwards
+          // note: it is important that you adhere to the protocol for your specific telescope, this protocol is often described in the user manual as "Slewing commands"
+        }
+
+        this.moveDown = function () {
+          //TODO: implement this method to point the tube of the telescope downwards
+          // note: it is important that you adhere to the protocol for your specific telescope, this protocol is often described in the user manual as "Slewing commands"
+        }
+
+        this.moveLeft = function () {
+          //TODO: implement this method to point the tube of the telescope to the left
+          // note: it is important that you adhere to the protocol for your specific telescope, this protocol is often described in the user manual as "Slewing commands"
+        }
+
+        this.moveRight = function () {
+          //TODO: implement this method to point the tube of the telescope to the right
+          // note: it is important that you adhere to the protocol for your specific telescope, this protocol is often described in the user manual as "Slewing commands"
+        }
+    }
+}
+
+// TODO: change this to your telescope 
+// note: the 1.011358025 value signifies the conversionFactor for your telescope, 
+// this is thoroughly explained in the "Adding a telescope" markdown file in the StarGazer repository
+telescopeManager.addStrategy("your telescope name", new YourTelescope(), 1.011358025)
